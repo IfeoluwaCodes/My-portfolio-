@@ -31,6 +31,7 @@
   display: flex;
   gap: 15px;
   margin-bottom: 20px;
+  justify-content: center;
 }
 
 nav a {
@@ -41,6 +42,7 @@ nav a {
 
 nav a:hover {
   color: #0066cc;
+  
 }
     h1, h2, h3, h4 {
   margin-top: 24px;
@@ -53,17 +55,25 @@ p {
 ul {
   padding-left: 20px;
      }
+    header {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 10px 0;
+  z-index: 1000;
+    }
      
   </style>
 </head>
 <body>
   <div class="container">
+    <header>
  <nav>
   <a href="#home">Home</a>
   <a href="#learning">Learning</a>
   <a href="#html">Html</a>
 </nav>
-   
+   </header>
   <h1 id="home">My web journey</h1>
   <p>
     I am learning web development and building websites step by step.
@@ -82,6 +92,7 @@ ul {
     <li>Imaging</li>
     <li>Links</li>
     <li>Containing </li>
+    <li>Navigation </li>
   </ul>
   
   <h4>Text</h4>
@@ -117,7 +128,11 @@ ul {
     <p>The CSS sytax for it should have a dot at the front 
     </p>
 
-  <p>
+  <h4>Navigation</h4>
+    <p>Navigation has both code for CSS and HTML.The CSS's declares well.... the design and all such as font, colour, UX etc.</p>
+    <p>The HTML part is kept immediately under the div tag.An ID tagging is needed for the nav to know where to go and work.</p>
+    
+    <p>
     My goal is to build real websites and earn from my skills.
   </p>
   </div>
