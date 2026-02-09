@@ -27,22 +27,15 @@
   border: none;
      
 }
-    nav {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
-  justify-content: center;
-}
-
-nav a {
+    .nav-link {
   color: #333;
   text-decoration: none;
   font-weight: bold;
+  margin-right: 15px; /* optional spacing */
 }
 
-nav a:hover {
+.nav-link:hover {
   color: #0066cc;
-  
 }
     h1, h2, h3, h4 {
   margin-top: 24px;
@@ -62,6 +55,9 @@ ul {
   padding: 10px 0;
   z-index: 1000;
     }
+    html {
+  scroll-behavior: smooth;
+      }
      
   </style>
 </head>
@@ -69,9 +65,9 @@ ul {
   <div class="container">
     <header>
  <nav>
-  <a href="#home">Home</a>
-  <a href="#learning">Learning</a>
-  <a href="#html">Html</a>
+  <a class="nav-link" href="#home">Home</a>
+  <a class="nav-link" href="#learning">Learning</a>
+  <a class="nav-link" href="#html">Html</a>
 </nav>
    </header>
   <h1 id="home">My web journey</h1>
