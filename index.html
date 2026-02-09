@@ -27,6 +27,14 @@
   padding: 30px;
   border-radius: 10px;
   border: none;
+     <nav>
+  <a href="#home">Home</a>
+  <a href="#learning">Learning</a>
+  <a href="#text">Text</a>
+  <a href="#imaging">Imaging</a>
+  <a href="#links">Links</a>
+</nav>
+    
 }
     h1, h2, h3, h4 {
   margin-top: 24px;
@@ -39,23 +47,38 @@ p {
 ul {
   padding-left: 20px;
      }
+    nav {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #0066cc;
+  }
   </style>
 </head>
 <body>
   <div class="container">
-  <h1>My web journey</h1>
+  <h1 id="home">My web journey</h1>
   <p>
     I am learning web development and building websites step by step.
   </p>
   
-  <h2>What I’m learning</h2>
+  <h2 id="learning">What I’m learning</h2>
   <ul>
     <li>HTML</li>
     <li>CSS</li>
     <li>JavaScript</li>
   </ul>
   
-  <h3>HTML</h3>
+  <h3 id="html">HTML</h3>
   <ul>
     <li>Text</li>
     <li>Imaging</li>
