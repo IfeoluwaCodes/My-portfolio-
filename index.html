@@ -1,110 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Portfolio</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 20px;
-      background: #f5f5f5;
-      margin: 0;
-    }
-    img {
-      width: 200px;
-      border-radius: 10px;
-    }
-    a {
-      color: #0066cc;
-      text-decoration: none;
-      font-weight: bold;
-    }
-   .container {
-  max-width: 600px;
-  margin: 40px auto;
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  border: none;
-     
+    /* ==============================
+   1. Global / Base Styles
+============================== */
+body {
+  font-family: Times New Roman, sans-serif;
+  line-height: 1.6;
+  color: #225;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
 }
-    .nav-link {
-  color: #333;
+
+a {
   text-decoration: none;
+}
+
+/* ==============================
+   2. Container
+============================== */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ==============================
+   3. Navigation
+============================== */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  background-color: #fafafa;
+  z-index: 100;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.nav-link {
+  color: #444;
   font-weight: bold;
-  margin-right: 15px; /* optional spacing */
+  transition: all 0.2s ease;
 }
 
 .nav-link:hover {
   color: #0066cc;
 }
-    h1, h2, h3, h4 {
-  margin-top: 24px;
-}
 
-p {
-  line-height: 1.6;
-}
-
-ul {
-  padding-left: 20px;
-     }
-    header {
-  position: sticky;
-  top: 0;
-  background: white;
-  padding: 10px 0;
-  z-index: 1000;
-    }
-    html {
-  scroll-behavior: smooth;
-      }
-     
+/* ==============================
+   4. Sections
+============================== */
 section {
   padding: 40px 20px;
   margin-bottom: 20px;
   border-radius: 10px;
-}
-
-section:nth-child(odd) {
-  background: #ffffff; /* white */
+  background-color: #fafafa;
+  box-sizing: border-box;
 }
 
 section:nth-child(even) {
-  background: #f0f0f0; /* light gray */
+  background-color: #f0f0f0;
 }
-h1, h2, h4 {
+
+h1, h2, h3, h4 {
   margin-top: 0;
-  margin-bottom: 15px;
+  letter-spacing: 0.5px;
 }
-    @media screen and (max-width: 600px) {
-  .container {
-    padding: 15px;
-  }
 
-  section {
-    padding: 25px 15px;
-  }
-
-  h1 {
-    font-size: 1.8em;
-  }
-
-  h2, h4 {
-    font-size: 1.4em;
-  }
-
-  nav {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
-
+/* ==============================
+   5. Projects
+============================== */
 .project {
-  background: #ffffff;
+  background: #fff;
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   max-width: 500px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-2px);
 }
 
 .project h3 {
@@ -114,7 +101,6 @@ h1, h2, h4 {
 .project a {
   display: inline-block;
   margin-top: 10px;
-  text-decoration: none;
   color: #0066cc;
   font-weight: bold;
 }
@@ -122,19 +108,17 @@ h1, h2, h4 {
 .project a:hover {
   text-decoration: underline;
 }
-#notes h3 {
-  margin-top: 30px;
-}
 
-#notes p {
-  line-height: 1.6;
-}
+/* ==============================
+   6. Notes (Collapsible)
+============================== */
 #notes details {
-  background: #ffffff;
+  background: #fff;
   padding: 15px 20px;
   border-radius: 8px;
   margin-bottom: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
 }
 
 #notes summary {
@@ -154,95 +138,121 @@ h1, h2, h4 {
 #notes details[open] summary::after {
   content: " −";
 }
-      
+
+/* ==============================
+   7. Responsive / Mobile
+============================== */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  section {
+    padding: 25px 15px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2, h4 {
+    font-size: 1.4em;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project {
+    max-width: 100%;
+  }
+}
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
- <nav>
-  <a class="nav-link" href="#home">Home</a>
-  <a class="nav-link" href="#learning">Learning</a>
-  <a class="nav-link" href="#projects">Projects</a>
-  <a class="nav-link" href="#notes">Notes</a> 
- </nav>
-   </header>
-<section id="home">
-  <h1 id="home">My web journey</h1>
-  <p>
-    I am learning web development and building websites step by step.
-  </p>
-</section>
 
-  <section id="learning">
-  <h2 id="learning">What I’m learning</h2>
-  <ul>
-    <li>HTML</li>
-    <li>CSS</li>
-    <li>JavaScript</li>
-  </ul>
-</section>
-  
-<section id="projects">
-  <h2>Projects</h2>
+    <!-- Navigation -->
+    <nav>
+      <a class="nav-link" href="#home">Home</a>
+      <a class="nav-link" href="#learning">Learning</a>
+      <a class="nav-link" href="#projects">Projects</a>
+      <a class="nav-link" href="#notes">Notes</a>
+    </nav>
 
-  <div class="project">
-    <h3>Personal Website</h3>
-    <p>A simple responsive website built with HTML and CSS.</p>
-    <a href="https://ifeoluwacodes.github.io/My-first-website-/" target="_blank">
-      View project
-    </a>
-  </div>
-</section>
+    <!-- Home Section -->
+    <section id="home">
+      <h1>Welcome to My Portfolio</h1>
+      <p>This is my personal website where I showcase my learning journey and projects.</p>
+    </section>
 
-<section id="notes">
-  <h2>Learning Notes</h2>
+    <!-- Learning Section -->
+    <section id="learning">
+      <h2>Learning Journey</h2>
+      <p>I am currently learning web development including HTML, CSS, and building projects to improve my skills.</p>
+    </section>
 
-  <details>
-    <summary>Text</summary>
-    <p>
-      Most text on a webpage is written using HTML text tags.
-      The <code>&lt;p&gt;</code> tag is used for paragraphs.
-      The <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags are used for headings.
-    </p>
-  </details>
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
 
-  <details>
-    <summary>Images</summary>
-    <p>
-      Images are added using the <code>&lt;img&gt;</code> tag.
-      It uses attributes like <code>src</code> and <code>alt</code>.
-    </p>
-  </details>
+      <div class="project">
+        <h3>Personal Website</h3>
+        <p>A simple responsive website built with HTML and CSS.</p>
+        <a href="https://ifeoluwacodes.github.io/My-first-website-/" target="_blank">View Project</a>
+      </div>
 
-  <details>
-    <summary>Links</summary>
-    <p>
-      Links are created using the <code>&lt;a&gt;</code> tag.
-      The <code>href</code> attribute defines the destination.
-    </p>
-  </details>
+      <!-- Add more project cards here -->
+    </section>
 
-  <details>
-    <summary>Containing Elements</summary>
-    <p>
-      The <code>&lt;div&gt;</code> tag is used to group elements.
-      CSS classes are used to style grouped content.
-    </p>
-  </details>
+    <!-- Notes Section -->
+    <section id="notes">
+      <h2>Learning Notes</h2>
 
-  <details>
-    <summary>Navigation</summary>
-    <p>
-      Navigation is built using the <code>&lt;nav&gt;</code> tag
-      and usually contains links to sections or pages.
-    </p>
-  </details>
-</section>
-    <p>
-    My goal is to build real websites and earn from my skills.
-  </p>
+      <details>
+        <summary>Text</summary>
+        <p>
+          Most text on a webpage is written using HTML text tags.
+          The <code>&lt;p&gt;</code> tag is used for paragraphs.
+          Headings use <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>.
+        </p>
+      </details>
+
+      <details>
+        <summary>Images</summary>
+        <p>
+          Images are added using the <code>&lt;img&gt;</code> tag.
+          It uses attributes like <code>src</code> and <code>alt</code>.
+        </p>
+      </details>
+
+      <details>
+        <summary>Links</summary>
+        <p>
+          Links are created using the <code>&lt;a&gt;</code> tag.
+          The <code>href</code> attribute defines the destination.
+        </p>
+      </details>
+
+      <details>
+        <summary>Containing Elements</summary>
+        <p>
+          The <code>&lt;div&gt;</code> tag groups elements.
+          CSS classes are used to style grouped content.
+        </p>
+      </details>
+
+      <details>
+        <summary>Navigation</summary>
+        <p>
+          Navigation is built using the <code>&lt;nav&gt;</code> tag
+          and usually contains links to sections or pages.
+        </p>
+      </details>
+
+    </section>
+
   </div>
 </body>
 </html>
-  
