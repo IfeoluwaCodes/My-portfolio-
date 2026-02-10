@@ -1,1 +1,225 @@
+  /* ==============================
+   1. Global / Base Styles
+============================== */
+body {
+  font-family: Times New Roman, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  background-color: #fefefe;
+}
 
+a {
+  text-decoration: none;
+}
+
+/* ==============================
+   2. Container
+============================== */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ==============================
+   3. Navigation
+============================== */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  background-color: #fafafa;
+  z-index: 100;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  overflow-x: auto;
+}
+
+.nav-link {
+  color: #444;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #0066cc;
+}
+
+/* ==============================
+   4. Sections
+============================== */
+section {
+  padding: 60px 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  background-color: #fafafa;
+  box-sizing: border-box;
+}
+
+section:nth-child(even) {
+  background-color: #f0f0f0;
+}
+
+h1 {
+  font-size: 2.4em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+    section:nth-child(odd) {
+  background-color: #fafafa;
+}
+
+section:nth-child(even) {
+  background-color: #f0f0f0;
+}
+/* ==============================
+   5. Projects
+============================== */
+    .projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.project {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  width: 300px;
+  max-width: 500px;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-4px);
+  box-shadow:0.6px 15px rgba(0,0,0,0.08);
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+/* ==============================
+   6. Notes (Collapsible)
+============================== */
+#notes details {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+
+#notes summary {
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+}
+
+#notes summary::-webkit-details-marker {
+  display: none;
+}
+
+#notes summary::after {
+  content: " +";
+}
+
+#notes details[open] summary::after {
+  content: " −";
+}
+
+/* ==============================
+   7. Responsive / Mobile
+============================== */
+@media screen and (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  section {
+    padding: 40px 15px;
+  }
+
+  h1 {
+    font-size: 1.6em;
+  }
+
+  h2, h3 {
+    font-size: 1.2em;
+  }
+
+  nav {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .project {
+    max-width: 90%;
+  }
+}
+
+/* =============
+  8. Comtact
+============== */
+    #contact {
+  padding: 40px 20px;
+  background-color: #fafafa;
+  border-radius: 10px;
+  text-align: center;
+}
+
+#contact h2 {
+  margin-bottom: 15px;
+}
+
+#contact a {
+  color: #0066cc;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+#contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact li {
+  margin-bottom: 10px;
+    }
+    html {
+  scroll-behavior: smooth;
+      }
