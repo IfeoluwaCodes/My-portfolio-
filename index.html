@@ -129,6 +129,31 @@ h1, h2, h4 {
 #notes p {
   line-height: 1.6;
 }
+#notes details {
+  background: #ffffff;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+#notes summary {
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none;
+}
+
+#notes summary::-webkit-details-marker {
+  display: none;
+}
+
+#notes summary::after {
+  content: " +";
+}
+
+#notes details[open] summary::after {
+  content: " −";
+}
       
   </style>
 </head>
@@ -173,53 +198,47 @@ h1, h2, h4 {
 <section id="notes">
   <h2>Learning Notes</h2>
 
-  <h3>Text</h3>
-  <p>
-    Most text on a webpage is written using HTML text tags.
-    The <code>&lt;p&gt;</code> tag is used for paragraphs.
-    The <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags are used for headings,
-    with <code>&lt;h1&gt;</code> being the most important.
-  </p>
-  <p>
-    The <code>&lt;title&gt;</code> tag sets the page title shown in the browser tab,
-    while the <code>&lt;head&gt;</code> tag contains information about the page.
-    All text tags have opening and closing tags.
-  </p>
+  <details>
+    <summary>Text</summary>
+    <p>
+      Most text on a webpage is written using HTML text tags.
+      The <code>&lt;p&gt;</code> tag is used for paragraphs.
+      The <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code> tags are used for headings.
+    </p>
+  </details>
 
-  <h3>Images</h3>
-  <p>
-    Images are added using the <code>&lt;img&gt;</code> tag.
-    The <code>&lt;img&gt;</code> tag does not have a closing tag.
-    It uses attributes such as <code>src</code> to specify the image location
-    and <code>alt</code> to describe the image.
-  </p>
+  <details>
+    <summary>Images</summary>
+    <p>
+      Images are added using the <code>&lt;img&gt;</code> tag.
+      It uses attributes like <code>src</code> and <code>alt</code>.
+    </p>
+  </details>
 
-  <h3>Links</h3>
-  <p>
-    Links are created using the <code>&lt;a&gt;</code> (anchor) tag.
-    The <code>href</code> attribute specifies where the link goes.
-    Using <code>target="_blank"</code> opens the link in a new browser tab.
-  </p>
+  <details>
+    <summary>Links</summary>
+    <p>
+      Links are created using the <code>&lt;a&gt;</code> tag.
+      The <code>href</code> attribute defines the destination.
+    </p>
+  </details>
 
-  <h3>Containing Elements</h3>
-  <p>
-    The <code>&lt;div&gt;</code> tag is a container used to group elements together.
-    It usually starts inside the <code>&lt;body&gt;</code> tag
-    and ends before the closing <code>&lt;/body&gt;</code>.
-  </p>
-  <p>
-    In CSS, classes are written with a dot (<code>.</code>) before the name
-    and are used to style elements.
-  </p>
+  <details>
+    <summary>Containing Elements</summary>
+    <p>
+      The <code>&lt;div&gt;</code> tag is used to group elements.
+      CSS classes are used to style grouped content.
+    </p>
+  </details>
 
-  <h3>Navigation</h3>
-  <p>
-    Navigation is created using the <code>&lt;nav&gt;</code> tag.
-    It contains links that help users move around the page or website.
-    Navigation links often connect to section IDs or other pages.
-  </p>
+  <details>
+    <summary>Navigation</summary>
+    <p>
+      Navigation is built using the <code>&lt;nav&gt;</code> tag
+      and usually contains links to sections or pages.
+    </p>
+  </details>
 </section>
-
     <p>
     My goal is to build real websites and earn from my skills.
   </p>
