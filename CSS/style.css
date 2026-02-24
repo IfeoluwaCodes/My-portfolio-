@@ -98,7 +98,7 @@ section:nth-child(even) {
 }
 
 .project {
-  background: #fff;
+  background: #2A9D8F;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
@@ -132,7 +132,7 @@ section:nth-child(even) {
    6. Notes (Collapsible)
 ============================== */
 #notes details {
-  background: #fff;
+  background: #2B2B2B;
   padding: 15px 20px;
   border-radius: 8px;
   margin-bottom: 15px;
@@ -193,7 +193,7 @@ section:nth-child(even) {
 ============== */
     #contact {
   padding: 40px 20px;
-  background-color: #fafafa;
+  background-color: #2A9D8F;
   border-radius: 10px;
   text-align: center;
 }
