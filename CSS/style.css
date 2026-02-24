@@ -7,7 +7,7 @@ body {
   color: #222;
   margin: 0;
   padding: 0;
-  background-color: #fefefe;
+  background-color: #F1FAEE;
 }
 
 a {
@@ -34,7 +34,7 @@ nav {
   margin-bottom: 20px;
   position: sticky;
   top: 0;
-  background-color: #fafafa;
+  background-color: #2A9D8F;
   z-index: 100;
   padding: 10px 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
@@ -48,7 +48,7 @@ nav {
 }
 
 .nav-link:hover {
-  color: #0066cc;
+  color: #2A9D8F;
 }
 
 /* ==============================
@@ -58,12 +58,12 @@ section {
   padding: 60px 20px;
   margin-bottom: 40px;
   border-radius: 10px;
-  background-color: #fafafa;
+  background-color: #2A9D8F;
   box-sizing: border-box;
 }
 
 section:nth-child(even) {
-  background-color: #f0f0f0;
+  background-color: #F1FAEE;
 }
 
 h1 {
@@ -81,11 +81,11 @@ h3 {
   margin-bottom: 10px;
 }
     section:nth-child(odd) {
-  background-color: #fafafa;
+  background-color: #2B2B2B;
 }
 
 section:nth-child(even) {
-  background-color: #f0f0f0;
+  background-color: #2B2B2B;
 }
 /* ==============================
    5. Projects
