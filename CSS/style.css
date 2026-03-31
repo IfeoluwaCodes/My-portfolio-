@@ -7,7 +7,7 @@ body {
   color: #222;
   margin: 0;
   padding: 0;
-  background-color: #F1FAEE;
+  background-color: #F0FFFF;
 }
 
 a {
@@ -34,7 +34,7 @@ nav {
   margin-bottom: 20px;
   position: sticky;
   top: 0;
-  background-color: #2A9D8F;
+  background-color: #F0FFFF;
   z-index: 100;
   padding: 10px 0;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
@@ -48,7 +48,7 @@ nav {
 }
 
 .nav-link:hover {
-  color: #2A9D8F;
+  color: #006D6F;
 }
 
 /* ==============================
@@ -58,12 +58,12 @@ section {
   padding: 60px 20px;
   margin-bottom: 40px;
   border-radius: 10px;
-  background-color: #2A9D8F;
+  background-color: #006D6F;
   box-sizing: border-box;
 }
 
 section:nth-child(even) {
-  background-color: #F1FAEE;
+  background-color: #F0FFFF;
 }
 
 h1 {
@@ -81,11 +81,11 @@ h3 {
   margin-bottom: 10px;
 }
     section:nth-child(odd) {
-  background-color: #2B2B2B;
+  background-color: #F0FFFF;
 }
 
 section:nth-child(even) {
-  background-color: #2B2B2B;
+  background-color: #006D6F;
 }
 /* ==============================
    5. Projects
@@ -98,7 +98,7 @@ section:nth-child(even) {
 }
 
 .project {
-  background: #2A9D8F;
+  background: #006D6F;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
@@ -132,7 +132,7 @@ section:nth-child(even) {
    6. Notes (Collapsible)
 ============================== */
 #notes details {
-  background: #2B2B2B;
+  background: #006D6F;
   padding: 15px 20px;
   border-radius: 8px;
   margin-bottom: 15px;
@@ -193,7 +193,7 @@ section:nth-child(even) {
 ============== */
     #contact {
   padding: 40px 20px;
-  background-color: #2A9D8F;
+  background-color: #F0FFFF;
   border-radius: 10px;
   text-align: center;
 }
