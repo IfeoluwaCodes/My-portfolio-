@@ -1,119 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My First Portfolio</title>
-   <link rel="stylesheet" href="CSS/style.css">
+  <title>Ifeoluwa | Frontend Developer</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="CSS/style.css">
 </head>
+
 <body>
-  <div class="container">
 
-    <!-- Navigation -->
-    <nav>
-      <a class="nav-link" href="#home">Home</a>
-      <a class="nav-link" href="#learning">Learning</a>
-      <a class="nav-link" href="#projects">Projects</a>
-      <a class="nav-link" href="#notes">Notes</a>
-      <a class="nav-link" href="#contact">Contact</a>
-    </nav>
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <!-- Home Section -->
-    <section id="home">
-      <h1>Welcome to My Portfolio</h1>
-      <p>This is my personal website where I showcase my learning journey and projects.</p>
-    </section>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
 
-    <!-- Learning Section -->
-    <section id="learning">
-      <h2>Learning Journey</h2>
-      <p>I am currently learning web development including HTML, CSS, and building projects to improve my skills.</p>
-    </section>
+      <div class="hero-text">
+        <h1>Ifeoluwa Akin-Ojo</h1>
+        <p>Frontend Developer focused on building clean, responsive, and user-friendly websites.</p>
+        <a href="#projects" class="btn">View My Work</a>
+      </div>
 
-    <!-- Projects Section -->
-    <section id="projects">
-  <h2>Projects</h2>
+      <div class="hero-image">
+        <img src="IMG-20260103-WA0009.jpg" alt="Ifeoluwa">
+      </div>
 
-  <div class="projects-container">
-    <div class="project">
-      <h3>Personal Website</h3>
-      <p>A simple responsive website built with HTML and CSS.</p>
-      <a href="https://ifeoluwacodes.github.io/My-portfolio-/" target="_blank">View Project</a>
     </div>
+  </section>
 
-    <div class="project">
-      <h3>Mini Calculator</h3>
-      <p>A JavaScript calculator to perform basic arithmetic operations.</p>
-      <a href="https://ifeoluwacodes.github.io/Mini-calculator-/" target="_blank">View Project</a>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects-container">
+
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio built with HTML and CSS to showcase my work and skills.</p>
+        <a href="https://ifeoluwacodes.github.io/My-portfolio-/" target="_blank">Live</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Mini Calculator</h3>
+        <p>A JavaScript calculator that performs basic arithmetic operations.</p>
+        <a href="https://ifeoluwacodes.github.io/Mini-calculator-/" target="_blank">Live</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Restaurant Website</h3>
+        <p>A responsive restaurant website with menu display and WhatsApp ordering integration.</p>
+        <a href="https://nexorahubhost.github.io/Mr-Good-Restaurant/" target="_blank">Live</a>
+      </div>
+
     </div>
+  </section>
 
-    <div class="project">
-      <h3>Landing Page</h3>
-      <p>A responsive landing page built for a fictional product.</p>
-      <a href="https://ifeoluwacodes.github.io/Landing-page/" target="_blank">View Project</a>
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a frontend developer with a focus on building clean and responsive websites.
+      I enjoy turning ideas into real, functional products using HTML, CSS, and JavaScript.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Let’s work together.</p>
+
+    <div class="contact-links">
+      <a href="mailto:akinojoifeoluwa@gmail.com">Email</a>
+      <a href="https://github.com/ifeoluwacodes" target="_blank">GitHub</a>
+      <a href="https://wa.me/2347048440570" target="_blank">WhatsApp</a>
     </div>
+  </section>
 
-    <!-- Add more project cards here if you want -->
-  </div>
-</section>
-
-    <!-- Notes Section -->
-    <section id="notes">
-      <h2>Learning Notes</h2>
-
-      <details>
-        <summary>Text</summary>
-        <p>
-          Most text on a webpage is written using HTML text tags.
-          The <code>&lt;p&gt;</code> tag is used for paragraphs.
-          Headings use <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>.
-        </p>
-      </details>
-
-      <details>
-        <summary>Images</summary>
-        <p>
-          Images are added using the <code>&lt;img&gt;</code> tag.
-          It uses attributes like <code>src</code> and <code>alt</code>.
-        </p>
-      </details>
-
-      <details>
-        <summary>Links</summary>
-        <p>
-          Links are created using the <code>&lt;a&gt;</code> tag.
-          The <code>href</code> attribute defines the destination.
-        </p>
-      </details>
-
-      <details>
-        <summary>Containing Elements</summary>
-        <p>
-          The <code>&lt;div&gt;</code> tag groups elements.
-          CSS classes are used to style grouped content.
-        </p>
-      </details>
-
-      <details>
-        <summary>Navigation</summary>
-        <p>
-          Navigation is built using the <code>&lt;nav&gt;</code> tag
-          and usually contains links to sections or pages.
-        </p>
-      </details>
-
-    </section>
-
-    <section id="contact">
-  <h2>Contact Me</h2>
-  <p>You can reach me through any of the following:</p>
-  <ul>
-    <li>Email: <a href="mailto:akinojoifeoluwa@gmail.com">akinojoifeoluwa@gmail.com</a></li>
-    <li>GitHub: <a href="https://github.com/ifeoluwacodes" target="_blank">ifeoluwacodes</a></li>
-    <li>LinkedIn: <a href="https://www.linkedin.com/in/ifeoluwa-akin-ojo-3b2b613ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Ifeoluwa Akin-Ojo</a></li>
-  </ul>
-    </section>
-
-  </div>
 </body>
 </html>
