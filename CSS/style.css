@@ -1,5 +1,5 @@
 /* ==============================
-   1. Global / Base Styles
+   1. Global Styles
 ============================== */
 body {
   font-family: 'Poppins', sans-serif;
@@ -10,13 +10,13 @@ body {
   background-color: #F0FFFF;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   color: inherit;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 /* ==============================
@@ -25,18 +25,18 @@ html {
 nav {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
   position: sticky;
   top: 0;
-  background-color: #F0FFFF;
-  z-index: 100;
+  background: #F0FFFF;
   padding: 15px 0;
+  z-index: 100;
   box-shadow: 0 2px 5px rgba(0,0,0,0.05);
 }
 
 nav a {
-  color: #444;
   font-weight: 600;
+  color: #444;
   transition: 0.3s;
 }
 
@@ -75,16 +75,16 @@ p {
    4. Hero Section
 ============================== */
 .hero {
-  background-color: #F0FFFF;
+  background: #F0FFFF;
 }
 
 .hero-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 40px;
   max-width: 1000px;
   margin: 0 auto;
+  gap: 40px;
 }
 
 .hero-text {
@@ -117,8 +117,8 @@ p {
 .projects-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
+  gap: 20px;
 }
 
 .project-card {
@@ -145,7 +145,6 @@ p {
    6. About
 ============================== */
 #about {
-  background-color: #F0FFFF;
   max-width: 800px;
   margin: 0 auto;
 }
@@ -154,7 +153,7 @@ p {
    7. Contact
 ============================== */
 #contact {
-  background-color: #F0FFFF;
+  background: #F0FFFF;
 }
 
 .contact-links {
@@ -165,8 +164,8 @@ p {
 }
 
 .contact-links a {
-  color: #006D6F;
   font-weight: 600;
+  color: #006D6F;
 }
 
 /* ==============================
